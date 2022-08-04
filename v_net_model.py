@@ -41,19 +41,19 @@ class V_net(nn.Module):
         self.pool4 = nn.MaxPool3d(2)
         self.conv5 = ResBlock(32, 64)
 
-        self.up1 = nn.Upsample((64,32,32))
+        self.up1 = nn.Upsample(scale_factor=2)
         self.up1_ = B_relu_Conv(64, 4)
         self.deconv1 = ResBlock(36, 32)
         #concat
-        self.up2 = nn.Upsample((64,64,64))
+        self.up2 = nn.Upsample(scale_factor=(1,2,2))
         self.up2_ = B_relu_Conv(32, 4)
         self.deconv2 = ResBlock(20, 16)
         #concat
-        self.up3 = nn.Upsample((128,128,128))
+        self.up3 = nn.Upsample(scale_factor=2)
         self.up3_ = B_relu_Conv(16, 4)
         self.deconv3 = ResBlock(12, 8)
         #concat
-        self.up4 = nn.Upsample((128,256,256))
+        self.up4 = nn.Upsample(sclae_factor=(1,2,2))
         self.up4_ = B_relu_Conv(8, 4)
         self.deconv4 = ResBlock(8, 4)
         
