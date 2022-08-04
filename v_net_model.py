@@ -24,9 +24,9 @@ class ResBlock(nn.Module):
         self.conv2 = B_relu_Conv(output, output)
     def forward (self, src):
         conv = self.conv(src)
-        conv = self.conv1(conv)
-        conv = self.conv2(conv)
-        return conv
+        conv1 = self.conv1(conv)
+        conv2 = self.conv2(conv1)
+        return conv1 + conv2
     
 class V_net(nn.Module):
     def __init__(self):
