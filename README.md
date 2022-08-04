@@ -3,4 +3,4 @@
 
 V-net Implementation with Pytorch based 1ch training
 
-(Segmentation task)
+(3D Segmentation task)
