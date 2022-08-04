@@ -27,6 +27,7 @@ class ResBlock(nn.Module):
         conv = self.conv1(conv)
         conv = self.conv2(conv)
         return conv
+    
 class V_net(nn.Module):
     def __init__(self):
         super(V_net, self).__init__()
