@@ -3,7 +3,7 @@
 
 V-net Implementation with Pytorch based 1ch training
 
-(3D medical image Segmentation task)
+(3D medical image Segmentation)
 
 Recommend Input image size: (128,256,256)
 
