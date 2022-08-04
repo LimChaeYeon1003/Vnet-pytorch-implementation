@@ -53,7 +53,7 @@ class V_net(nn.Module):
         self.up3_ = B_relu_Conv(16, 4)
         self.deconv3 = ResBlock(12, 8)
         #concat
-        self.up4 = nn.Upsample(sclae_factor=(1,2,2))
+        self.up4 = nn.Upsample(scale_factor=(1,2,2))
         self.up4_ = B_relu_Conv(8, 4)
         self.deconv4 = ResBlock(8, 4)
         
