@@ -2,3 +2,5 @@
 # Vnet
 
 V-net Implementation with Pytorch based 1ch training
+
+(Segmentation task)
