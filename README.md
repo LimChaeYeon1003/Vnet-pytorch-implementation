@@ -1,4 +1,4 @@
-# V-net-Implementation
+# V-net-Implementation With pytorch
 # Vnet
 
 V-net Implementation with Pytorch
